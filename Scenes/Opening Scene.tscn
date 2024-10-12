@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnm78hlf0nncm"]
+
+[ext_resource type="Texture2D" uid="uid://c1ep4eq8iwrgs" path="res://Assets/Graphics/Background/Cloudy_Sky-Night_03-1024x512.png" id="1_58fae"]
+[ext_resource type="Script" path="res://Scripts/Opening Scene.gd" id="1_s76ta"]
+[ext_resource type="ButtonGroup" uid="uid://bktm1m6l7ld74" path="res://Themes/Difficulty Selection.tres" id="3_7cd4s"]
+[ext_resource type="Theme" uid="uid://bgjh5cryvhucf" path="res://Themes/Buttons theme.tres" id="3_elubh"]
+
+[node name="OpeningScene" type="Node2D"]
+script = ExtResource("1_s76ta")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_repeat = 2
+texture = ExtResource("1_58fae")
+centered = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 465.0
+offset_top = 912.0
+offset_right = 615.0
+offset_bottom = 1009.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 50
+
+[node name="Start Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_elubh")
+text = "Start"
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Choose Difficulty:"
+
+[node name="Easy" type="CheckButton" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+button_pressed = true
+button_group = ExtResource("3_7cd4s")
+text = "Easy"
+
+[node name="Medium" type="CheckButton" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+button_group = ExtResource("3_7cd4s")
+text = "Medium"
+
+[node name="Hard" type="CheckButton" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+button_group = ExtResource("3_7cd4s")
+text = "Hard"
+
+[connection signal="pressed" from="VBoxContainer/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/PanelContainer/VBoxContainer/Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="VBoxContainer/PanelContainer/VBoxContainer/Medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="VBoxContainer/PanelContainer/VBoxContainer/Hard" to="." method="_on_hard_pressed"]

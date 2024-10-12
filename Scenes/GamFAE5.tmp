@@ -1,0 +1,454 @@
+[gd_scene load_steps=54 format=3 uid="uid://c0f8rbcy5l5ih"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_6r7du"]
+[ext_resource type="ButtonGroup" uid="uid://ci2y37m5adl7g" path="res://Themes/BG Elements.tres" id="1_ixxd7"]
+[ext_resource type="Script" path="res://Scripts/Container.gd" id="2_cxilt"]
+[ext_resource type="Theme" uid="uid://bgjh5cryvhucf" path="res://Themes/Buttons theme.tres" id="3_otchl"]
+[ext_resource type="Script" path="res://Scripts/Element1.gd" id="4_lrlby"]
+[ext_resource type="AudioStream" uid="uid://8o2vxj4hsnch" path="res://Assets/Sounds/Victory.wav" id="4_x63bi"]
+[ext_resource type="Script" path="res://Scripts/Element2.gd" id="5_275qb"]
+[ext_resource type="Script" path="res://Scripts/Element3.gd" id="6_4fvcp"]
+[ext_resource type="Script" path="res://Scripts/Element4.gd" id="7_1qj18"]
+[ext_resource type="Script" path="res://Scripts/Element5.gd" id="8_mowoy"]
+[ext_resource type="Script" path="res://Scripts/Element6.gd" id="9_wvduc"]
+[ext_resource type="Script" path="res://Scripts/Element7.gd" id="10_6cqwy"]
+[ext_resource type="Script" path="res://Scripts/Element8.gd" id="11_p7a6n"]
+[ext_resource type="Script" path="res://Scripts/Element9.gd" id="12_oxgwx"]
+[ext_resource type="Script" path="res://Scripts/Element10.gd" id="13_fe10s"]
+[ext_resource type="Script" path="res://Scripts/Element11.gd" id="14_tshs8"]
+[ext_resource type="Script" path="res://Scripts/Element12.gd" id="15_43d2a"]
+[ext_resource type="Script" path="res://Scripts/Element13.gd" id="16_pyq40"]
+[ext_resource type="Script" path="res://Scripts/Element14.gd" id="17_eg8qx"]
+[ext_resource type="Script" path="res://Scripts/Element15.gd" id="18_x6712"]
+[ext_resource type="Script" path="res://Scripts/Element16.gd" id="19_curlp"]
+[ext_resource type="Script" path="res://Scripts/Element17.gd" id="20_62xdb"]
+[ext_resource type="Script" path="res://Scripts/Element18.gd" id="21_g5t2c"]
+[ext_resource type="Script" path="res://Scripts/Element19.gd" id="22_eroo1"]
+[ext_resource type="Script" path="res://Scripts/Element20.gd" id="23_wj5no"]
+[ext_resource type="Script" path="res://Scripts/Element21.gd" id="24_qf786"]
+[ext_resource type="Script" path="res://Scripts/Element22.gd" id="25_1haq7"]
+[ext_resource type="Script" path="res://Scripts/Element23.gd" id="26_1lspe"]
+[ext_resource type="Script" path="res://Scripts/Element24.gd" id="27_qk84s"]
+[ext_resource type="Script" path="res://Scripts/Element25.gd" id="28_57lj2"]
+[ext_resource type="Script" path="res://Scripts/Element26.gd" id="29_xjk8p"]
+[ext_resource type="Script" path="res://Scripts/Element27.gd" id="30_vts4l"]
+[ext_resource type="Script" path="res://Scripts/Element28.gd" id="31_fbusi"]
+[ext_resource type="Script" path="res://Scripts/Element29.gd" id="32_b6eml"]
+[ext_resource type="Script" path="res://Scripts/Element30.gd" id="33_kbvdp"]
+[ext_resource type="Script" path="res://Scripts/Element31.gd" id="34_hjda7"]
+[ext_resource type="Script" path="res://Scripts/Element32.gd" id="35_jytsd"]
+[ext_resource type="Script" path="res://Scripts/Element33.gd" id="36_dk6jy"]
+[ext_resource type="Script" path="res://Scripts/Element34.gd" id="37_f826h"]
+[ext_resource type="Script" path="res://Scripts/Element35.gd" id="38_gaxh2"]
+[ext_resource type="Script" path="res://Scripts/Element36.gd" id="39_0eni3"]
+[ext_resource type="Script" path="res://Scripts/Element37.gd" id="40_pdl55"]
+[ext_resource type="Script" path="res://Scripts/Element38.gd" id="41_yq7jx"]
+[ext_resource type="Script" path="res://Scripts/Element39.gd" id="42_4d72v"]
+[ext_resource type="Script" path="res://Scripts/Element40.gd" id="43_tqlts"]
+[ext_resource type="Script" path="res://Scripts/Element41.gd" id="44_b3o80"]
+[ext_resource type="Script" path="res://Scripts/Element42.gd" id="45_g8xj7"]
+[ext_resource type="Script" path="res://Scripts/Element43.gd" id="46_ec6aq"]
+[ext_resource type="Script" path="res://Scripts/Element44.gd" id="47_7lk5x"]
+[ext_resource type="Script" path="res://Scripts/Element45.gd" id="48_5t8rj"]
+[ext_resource type="Script" path="res://Scripts/Element46.gd" id="49_wpnih"]
+[ext_resource type="Script" path="res://Scripts/Element47.gd" id="50_j1sal"]
+[ext_resource type="Script" path="res://Scripts/Element48.gd" id="51_6l5vh"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6r7du")
+
+[node name="Container" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -92.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 6
+script = ExtResource("2_cxilt")
+
+[node name="Element1" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("4_lrlby")
+
+[node name="Element2" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("5_275qb")
+
+[node name="Element3" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("6_4fvcp")
+
+[node name="Element4" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("7_1qj18")
+
+[node name="Element5" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("8_mowoy")
+
+[node name="Element6" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("9_wvduc")
+
+[node name="Element7" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("10_6cqwy")
+
+[node name="Element8" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("11_p7a6n")
+
+[node name="Element9" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("12_oxgwx")
+
+[node name="Element10" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("13_fe10s")
+
+[node name="Element11" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("14_tshs8")
+
+[node name="Element12" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("15_43d2a")
+
+[node name="Element13" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("16_pyq40")
+
+[node name="Element14" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("17_eg8qx")
+
+[node name="Element15" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("18_x6712")
+
+[node name="Element16" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("19_curlp")
+
+[node name="Element17" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("20_62xdb")
+
+[node name="Element18" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("21_g5t2c")
+
+[node name="Element19" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("22_eroo1")
+
+[node name="Element20" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("23_wj5no")
+
+[node name="Element21" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("24_qf786")
+
+[node name="Element22" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("25_1haq7")
+
+[node name="Element23" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("26_1lspe")
+
+[node name="Element24" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("27_qk84s")
+
+[node name="Element25" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("28_57lj2")
+
+[node name="Element26" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("29_xjk8p")
+
+[node name="Element27" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("30_vts4l")
+
+[node name="Element28" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("31_fbusi")
+
+[node name="Element29" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("32_b6eml")
+
+[node name="Element30" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("33_kbvdp")
+
+[node name="Element31" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("34_hjda7")
+
+[node name="Element32" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("35_jytsd")
+
+[node name="Element33" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("36_dk6jy")
+
+[node name="Element34" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("37_f826h")
+
+[node name="Element35" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("38_gaxh2")
+
+[node name="Element36" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("39_0eni3")
+
+[node name="Element37" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("40_pdl55")
+
+[node name="Element38" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("41_yq7jx")
+
+[node name="Element39" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("42_4d72v")
+
+[node name="Element40" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("43_tqlts")
+
+[node name="Element41" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("44_b3o80")
+
+[node name="Element42" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("45_g8xj7")
+
+[node name="Element43" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("46_ec6aq")
+
+[node name="Element44" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("47_7lk5x")
+
+[node name="Element45" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("48_5t8rj")
+
+[node name="Element46" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("49_wpnih")
+
+[node name="Element47" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("50_j1sal")
+
+[node name="Element48" type="Button" parent="Container"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_ixxd7")
+script = ExtResource("51_6l5vh")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="HUD VBox" type="VBoxContainer" parent="HUD"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="HUD/HUD VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Matches" type="Label" parent="HUD/HUD VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Victory Screen" type="VBoxContainer" parent="HUD"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -95.0
+offset_right = 175.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Retry button" type="Button" parent="HUD/Victory Screen"]
+layout_mode = 2
+theme = ExtResource("3_otchl")
+text = "Replay"
+
+[node name="Main Menu" type="Button" parent="HUD/Victory Screen"]
+layout_mode = 2
+theme = ExtResource("3_otchl")
+text = "Main Menu"
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_x63bi")
+bus = &"SFX"
+
+[connection signal="toggled" from="Container/Element1" to="." method="_on_element_1_toggled"]
+[connection signal="toggled" from="Container/Element2" to="." method="_on_element_2_toggled"]
+[connection signal="toggled" from="Container/Element3" to="." method="_on_element_3_toggled"]
+[connection signal="toggled" from="Container/Element4" to="." method="_on_element_4_toggled"]
+[connection signal="toggled" from="Container/Element5" to="." method="_on_element_5_toggled"]
+[connection signal="toggled" from="Container/Element6" to="." method="_on_element_6_toggled"]
+[connection signal="toggled" from="Container/Element7" to="." method="_on_element_7_toggled"]
+[connection signal="toggled" from="Container/Element8" to="." method="_on_element_8_toggled"]
+[connection signal="toggled" from="Container/Element9" to="." method="_on_element_9_toggled"]
+[connection signal="toggled" from="Container/Element10" to="." method="_on_element_10_toggled"]
+[connection signal="toggled" from="Container/Element11" to="." method="_on_element_11_toggled"]
+[connection signal="toggled" from="Container/Element12" to="." method="_on_element_12_toggled"]
+[connection signal="toggled" from="Container/Element13" to="." method="_on_element_13_toggled"]
+[connection signal="toggled" from="Container/Element14" to="." method="_on_element_14_toggled"]
+[connection signal="toggled" from="Container/Element15" to="." method="_on_element_15_toggled"]
+[connection signal="toggled" from="Container/Element16" to="." method="_on_element_16_toggled"]
+[connection signal="toggled" from="Container/Element17" to="." method="_on_element_17_toggled"]
+[connection signal="toggled" from="Container/Element18" to="." method="_on_element_18_toggled"]
+[connection signal="toggled" from="Container/Element19" to="." method="_on_element_19_toggled"]
+[connection signal="toggled" from="Container/Element20" to="." method="_on_element_20_toggled"]
+[connection signal="toggled" from="Container/Element21" to="." method="_on_element_21_toggled"]
+[connection signal="toggled" from="Container/Element22" to="." method="_on_element_22_toggled"]
+[connection signal="toggled" from="Container/Element23" to="." method="_on_element_23_toggled"]
+[connection signal="toggled" from="Container/Element24" to="." method="_on_element_24_toggled"]
+[connection signal="toggled" from="Container/Element25" to="." method="_on_element_25_toggled"]
+[connection signal="toggled" from="Container/Element26" to="." method="_on_element_26_toggled"]
+[connection signal="toggled" from="Container/Element27" to="." method="_on_element_27_toggled"]
+[connection signal="toggled" from="Container/Element28" to="." method="_on_element_28_toggled"]
+[connection signal="toggled" from="Container/Element29" to="." method="_on_element_29_toggled"]
+[connection signal="toggled" from="Container/Element30" to="." method="_on_element_30_toggled"]
+[connection signal="toggled" from="Container/Element31" to="." method="_on_element_31_toggled"]
+[connection signal="toggled" from="Container/Element32" to="." method="_on_element_32_toggled"]
+[connection signal="toggled" from="Container/Element33" to="." method="_on_element_33_toggled"]
+[connection signal="toggled" from="Container/Element34" to="." method="_on_element_34_toggled"]
+[connection signal="toggled" from="Container/Element35" to="." method="_on_element_35_toggled"]
+[connection signal="toggled" from="Container/Element36" to="." method="_on_element_36_toggled"]
+[connection signal="toggled" from="Container/Element37" to="." method="_on_element_37_toggled"]
+[connection signal="toggled" from="Container/Element38" to="." method="_on_element_38_toggled"]
+[connection signal="toggled" from="Container/Element39" to="." method="_on_element_39_toggled"]
+[connection signal="toggled" from="Container/Element40" to="." method="_on_element_40_toggled"]
+[connection signal="toggled" from="Container/Element41" to="." method="_on_element_41_toggled"]
+[connection signal="toggled" from="Container/Element42" to="." method="_on_element_42_toggled"]
+[connection signal="toggled" from="Container/Element43" to="." method="_on_element_43_toggled"]
+[connection signal="toggled" from="Container/Element44" to="." method="_on_element_44_toggled"]
+[connection signal="toggled" from="Container/Element45" to="." method="_on_element_45_toggled"]
+[connection signal="toggled" from="Container/Element46" to="." method="_on_element_46_toggled"]
+[connection signal="toggled" from="Container/Element47" to="." method="_on_element_47_toggled"]
+[connection signal="toggled" from="Container/Element48" to="." method="_on_element_48_toggled"]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://4vkum2v5swya"]
+
+[ext_resource type="Script" path="res://Scripts/element.gd" id="1_jkpx2"]
+[ext_resource type="Texture2D" uid="uid://chhtyw22h8yab" path="res://Assets/Graphics/Panel/Panel.png" id="1_ymxby"]
+[ext_resource type="Texture2D" uid="uid://cfoj8ghcgpufn" path="res://Assets/Graphics/Fruits and veggies/1.png" id="3_jpjs1"]
+[ext_resource type="AudioStream" uid="uid://dtu5ox4bdmrnr" path="res://Assets/Sounds/Turn.mp3" id="4_e52s7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wlsw0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hl0qm"]
+size = Vector2(96, 96)
+
+[node name="Element" type="Button"]
+custom_minimum_size = Vector2(180, 180)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wlsw0")
+toggle_mode = true
+flat = true
+script = ExtResource("1_jkpx2")
+
+[node name="Background" type="TextureRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ymxby")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Fruit" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_jpjs1")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Curtain" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ymxby")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(48, 48)
+shape = SubResource("RectangleShape2D_hl0qm")
+
+[node name="Turn" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_e52s7")
+bus = &"SFX"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

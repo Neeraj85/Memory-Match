@@ -1,0 +1,223 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7i6hoyigbhxb"]
+
+[ext_resource type="Script" path="res://Scripts/game_grid.gd" id="1_jlqs7"]
+[ext_resource type="PackedScene" uid="uid://4vkum2v5swya" path="res://Scenes/element.tscn" id="1_kdwc2"]
+[ext_resource type="Texture2D" uid="uid://c1ep4eq8iwrgs" path="res://Assets/Graphics/Background/Cloudy_Sky-Night_03-1024x512.png" id="3_ffuuw"]
+[ext_resource type="AudioStream" uid="uid://3u8yngpsqr3l" path="res://Assets/Sounds/Correct.wav" id="4_tjxpl"]
+[ext_resource type="Theme" uid="uid://bgjh5cryvhucf" path="res://Themes/Buttons theme.tres" id="5_qxuvu"]
+[ext_resource type="AudioStream" uid="uid://8o2vxj4hsnch" path="res://Assets/Sounds/Victory.wav" id="5_ryjjt"]
+
+[node name="Game Grid" type="GridContainer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1468.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 6
+script = ExtResource("1_jlqs7")
+
+[node name="Element1" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element2" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element3" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element4" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element5" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element6" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element7" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element8" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element9" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element10" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element11" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element12" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element13" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element14" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element15" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element16" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element17" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element18" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element19" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element20" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element21" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element22" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element23" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element24" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element25" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element26" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element27" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element28" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element29" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element30" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element31" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element32" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element33" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element34" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element35" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element36" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element37" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element38" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element39" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element40" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element41" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element42" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element43" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element44" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element45" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element46" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element47" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="Element48" parent="." instance=ExtResource("1_kdwc2")]
+layout_mode = 2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_repeat = 2
+texture = ExtResource("3_ffuuw")
+centered = false
+
+[node name="Match" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_tjxpl")
+bus = &"SFX"
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="HUD VBox" type="VBoxContainer" parent="HUD"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="HUD/HUD VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Matches" type="Label" parent="HUD/HUD VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Victory Screen" type="VBoxContainer" parent="HUD"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -95.0
+offset_right = 175.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Retry button" type="Button" parent="HUD/Victory Screen"]
+layout_mode = 2
+theme = ExtResource("5_qxuvu")
+text = "Replay"
+
+[node name="Main Menu" type="Button" parent="HUD/Victory Screen"]
+layout_mode = 2
+theme = ExtResource("5_qxuvu")
+text = "Main Menu"
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ryjjt")
+bus = &"SFX"
+
+[connection signal="pressed" from="HUD/Victory Screen/Retry button" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="HUD/Victory Screen/Main Menu" to="." method="_on_main_menu_pressed"]
